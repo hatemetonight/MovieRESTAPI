@@ -31,3 +31,8 @@ BODY:
 ПОИСК ФИЛЬМА ПО ID
 GET: http://localhost:8080/api/test/user/getmovie?id={id}
 
+
+СПИСОК ВСЕХ ФИЛЬМОВ
+GET: http://localhost:8080/api/test/all/movies
+
+
