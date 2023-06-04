@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:13
+    volumes:
+      - ./db:/var/lib/postgresql/data
+      - /init:/docker-entrypoint-initdb.d
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=2002
+      - POSTGRES_DB=MovieDatabase
+    ports:
+      - "5432:5432"
